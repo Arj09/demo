@@ -173,7 +173,37 @@ export function Home(){
 
 
     
-    
+    <Typography style={{textAlign:"center", fontSize:"4vw", padding:"10px 0"}}> My Work </Typography>
+    <Box sx={{ flexGrow: 1, width:"80vw", margin:"20px auto" }}>
+      
+      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12 }}>
+        {Array.from(Array(6)).map((_, index) => (
+          <Grid item xs={2} sm={4} md={4} key={index}>
+            <Item>
+
+            <CardMedia
+            sx={{ height: 140 }}
+            image="https://images.pexels.com/photos/17427379/pexels-photo-17427379/free-photo-of-a-pelican-by-a-sea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            
+            />
+          <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+           Blog Application
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+          </Typography>
+          </CardContent>
+          <CardActions>
+          <Button size="small">Live demo</Button>
+          <Button size="small">view code</Button>
+          </CardActions>
+            </Item>
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
 
     <Box sx={{  background:"black", height:"20vh"}}>
       <Typography sx={{textAlign:"center", color:"white", padding:"60px"}}>Copyright@2023 MernStack</Typography>
