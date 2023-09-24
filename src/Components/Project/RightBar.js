@@ -158,3 +158,10 @@ export const Right = ()=>{
         </Box>
     )
 }
+
+<Stack direction={'row'} marginTop={'20vh'} marginLeft={'20px'} sx={{}} spacing={2} >
+        <CustomCard CardHeading="To- do List(4)" card1={{title:"Important", body:"This is my store please complete it ", Due_day:"10", sildingvalue :"40" }} />
+        <CustomCard CardHeading="To- do List(4)" card1={{title:"Important", body:"This is my store please complete it ", Due_day:"10", sildingvalue :"40" }} />
+        <CustomCard CardHeading="To- do List(4)" card1={{title:"Important", body:"This is my store please complete it ", Due_day:"10", sildingvalue :"40" }} />
+        <CustomCard CardHeading="To- do List(4)" card1={{title:"Important", body:"This is my store please complete it ", Due_day:"10", sildingvalue :"40" }} />
+      </Stack>

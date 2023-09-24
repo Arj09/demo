@@ -15,7 +15,8 @@ import Notifications from '@mui/icons-material/Notifications';
 const StyleToolbar = styled(Toolbar)({
   display:"flex",
   justifyContent: 'space-between',
-  backgroundColor: "blue"
+  backgroundColor: "blue",
+ 
  
 })
 
@@ -101,7 +102,7 @@ export function Home(){
 
   return(
     <>
-    <AppBar position='sticky'>
+    <AppBar position='sticky' >
       <StyleToolbar>
         <Typography variant='h4' sx={{display:{xs:'none', md:'block'}}}>MernStack</Typography>
         <WebhookIcon sx={{display:{xs:'block', md:'none'}}}/>
@@ -157,6 +158,8 @@ export function Home(){
       </Menu>
       </StyleToolbar>
     </AppBar>
+
+
     <Main/>
 
    
